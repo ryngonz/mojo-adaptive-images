@@ -53,8 +53,8 @@ function mojo_adaptive_install() {
 	$charset_collate = $wpdb->get_charset_collate();
 
 	$sql = "CREATE TABLE IF NOT EXISTS $table_name (
-		id bigint(20) NOT NULL AUTO_INCREMENT,
-		gid bigint(20) NOT NULL,
+		id int(20) NOT NULL AUTO_INCREMENT,
+		gid int(20) NOT NULL,
 		img text NOT NULL,
 		screen_size int(9) NOT NULL,
 		UNIQUE KEY id (id)
