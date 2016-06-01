@@ -20,7 +20,7 @@
 		<tr>
 			<td><?=$mai->id?></td>
 			<td><?=$mai->gid?></td>
-			<td>[mojo_adaptive_logo gid="<?=$mai->gid?>"]</td>
+			<td>[mojo_adaptive_img gid="<?=$mai->gid?>"]</td>
 			<td><a class="button button-primary" href="admin.php?page=mojo-adaptive-editor&id=<?=$mai->id?>"">Edit</a> <a class="button button-secondary" href="admin.php?page=mojo-adaptive-images&id=<?=$mai->id?>&al-command=del" onclick="return confirm('Are you sure that you want to delete this entry?')">Delete</a></td>
 		</tr>
 		<?php endforeach; ?>
