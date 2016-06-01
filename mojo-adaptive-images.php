@@ -40,7 +40,7 @@ add_action ( 'admin_enqueue_scripts', function () {
         wp_enqueue_media ();
 } );
 
-add_shortcode( 'mojo_adaptive_logo', 'mojo_adaptive_logo_shortcode' );
+add_shortcode( 'mojo_adaptive_img', 'mojo_adaptive_img_shortcode' );
 add_action( 'admin_head', 'mojo_admin_scripts' );
 
 // INSTALL AND UNINSTALL MODULE
@@ -88,8 +88,8 @@ function mojo_admin_scripts(){
 
 // END - INSTALL AND UNINSTALL MODULE
 
-// [mojo_adaptive_logo id=""]
-function mojo_adaptive_logo_shortcode($atts){
+// [mojo_adaptive_img id=""]
+function mojo_adaptive_img_shortcode($atts){
 	$a = shortcode_atts( array(
         'gid' => '0',
     ), $atts );
