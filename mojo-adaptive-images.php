@@ -189,7 +189,7 @@ if(!empty($_POST) && $_POST['al-post-pass'] == 1){
 	$img_json = json_encode($image_break);
 	$gid = $_POST['gid'];
 
-	if(empty($_POST['id']) || $_POST['id'] != ""){
+	if(empty($_POST['id']) || $_POST['id'] == ""){
 		$sql_query = "INSERT INTO `".$mojo_table_name."` (`id`, `gid`, `img_json`) VALUES (NULL, '".$gid."', '".$img_json."');";
 	}else{
 		$sql_query = "UPDATE `".$mojo_table_name."` SET `gid` = '".$gid."', `img_json` = '".$img_json."' WHERE `wp_mojo_adaptive`.`id` = 2;";
