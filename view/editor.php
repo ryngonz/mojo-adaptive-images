@@ -11,7 +11,7 @@
         <p><?php _e( $mojo_err, 'mojo-adaptive-images-notice' ); ?></p>
     </div>
 <?php endif; ?>
-<p>Use the shortcode: <strong>[mojo_adaptive_logo gid="<?=$gid?>"]</strong></p>
+<p>Use the shortcode: <strong>[mojo_adaptive_img gid="<?=$gid?>"]</strong></p>
 <form id="mbi-form" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>" method="POST">
 	<div id="form-container">
 		<?php foreach($al_image_break as $image_break): ?>
