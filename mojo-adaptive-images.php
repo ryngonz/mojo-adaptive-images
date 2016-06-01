@@ -105,7 +105,9 @@ function mojo_adaptive_img_shortcode($atts){
 		$al_gid = $mai->gid;
 	endforeach;
 	
+	ob_start();
 	require("view/shortcode.php");
+	return ob_get_clean();
 }
 
 function mojo_adaptive_logo_scripts()
