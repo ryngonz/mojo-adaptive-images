@@ -55,7 +55,7 @@ function mojo_adaptive_install() {
 	$sql = "CREATE TABLE IF NOT EXISTS $table_name (
 		id int(20) NOT NULL AUTO_INCREMENT,
 		gid int(20) NOT NULL,
-		img_json text NOT NULL
+		img_json text NOT NULL,
 		UNIQUE KEY id (id)
 	) $charset_collate;";
 
